@@ -1,0 +1,148 @@
+# cloud/kubernetes/streaming-server/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streaming-server
+  namespace: streaming
+  labels:
+    app: streaming-server
+    version: v1.0.0
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: streaming-server
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: streaming-server
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9090"
+        prometheus.io/path: "/metrics"
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - streaming-server
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: streaming-server
+        image: registry.gitlab.com/your-org/streaming-engine:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        - containerPort: 1935
+          name: rtmp
+          protocol: TCP
+        - containerPort: 8081
+          name: websocket
+          protocol: TCP
+        - containerPort: 9090
+          name: metrics
+          protocol: TCP
+        env:
+        - name: STREAMING_ENV
+          value: "production"
+        - name: LOG_LEVEL
+          value: "INFO"
+        - name: KUBERNETES_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+            ephemeral-storage: "1Gi"
+          limits:
+            memory: "2Gi"
+            cpu: "2000m"
+            ephemeral-storage: "5Gi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 1
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/streaming-engine
+        - name: data-volume
+          mountPath: /var/lib/streaming-engine
+        - name: logs-volume
+          mountPath: /var/log/streaming-engine
+      volumes:
+      - name: config-volume
+        configMap:
+          name: streaming-config
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: streaming-data-pvc
+      - name: logs-volume
+        emptyDir: {}
+      tolerations:
+      - key: "streaming"
+        operator: "Equal"
+        value: "true"
+        effect: "NoSchedule"
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: streaming-service
+  namespace: streaming
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+    service.beta.kubernetes.io/aws-load-balancer-internal: "false"
+spec:
+  selector:
+    app: streaming-server
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+    protocol: TCP
+  - name: rtmp
+    port: 1935
+    targetPort: 1935
+    protocol: TCP
+  - name: websocket
+    port: 8081
+    targetPort: 8081
+    protocol: TCP
+  - name: metrics
+    port: 9090
+    targetPort: 9090
+    protocol: TCP
+  externalTrafficPolicy: Local

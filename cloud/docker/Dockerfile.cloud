@@ -1,0 +1,75 @@
+# cloud/docker/Dockerfile.cloud
+FROM ubuntu:22.04 as builder
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    libboost-all-dev \
+    libssl-dev \
+    libopencv-dev \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy source code
+WORKDIR /build
+COPY . .
+
+# Build with cloud optimizations
+RUN mkdir build && cd build && \
+    cmake .. \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DUSE_SIMD=ON \
+        -DUSE_OPENMP=ON \
+        -DENABLE_CLOUD=ON \
+        -DCMAKE_INSTALL_PREFIX=/usr/local && \
+    make -j$(nproc) && \
+    make install
+
+# Runtime image
+FROM ubuntu:22.04
+
+# Install runtime dependencies
+RUN apt-get update && apt-get install -y \
+    libboost-system1.74 \
+    libboost-thread1.74 \
+    libssl3 \
+    libopencv-core4.5 \
+    libopencv-imgproc4.5 \
+    libavcodec58 \
+    libavformat58 \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root user
+RUN groupadd -r streaming && useradd -r -g streaming streaming
+USER streaming
+WORKDIR /home/streaming
+
+# Copy built binaries
+COPY --from=builder /usr/local/bin/ /usr/local/bin/
+COPY --from=builder /usr/local/lib/ /usr/local/lib/
+
+# Create necessary directories
+RUN mkdir -p logs config data
+
+# Copy configuration
+COPY --chown=streaming:streaming config/cloud/ ./config/
+COPY --chown=streaming:streaming scripts/health-check.sh ./
+
+# Expose ports
+EXPOSE 8080 1935 8081 9090
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s \
+    CMD ./health-check.sh
+
+# Start command with cloud-specific optimizations
+CMD ["streaming-server", \
+     "--config", "/home/streaming/config/cloud-config.yaml", \
+     "--cloud-provider", "aws", \
+     "--enable-cluster-mode", \
+     "--max-memory", "2G"]

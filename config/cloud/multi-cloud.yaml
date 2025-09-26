@@ -1,0 +1,80 @@
+# config/cloud/multi-cloud.yaml
+cloud:
+  strategy: "active-active"
+  providers:
+    - name: "aws"
+      region: "us-west-2"
+      weight: 50
+      enabled: true
+      configuration:
+        cluster_name: "streaming-aws-west"
+        node_count: 3
+        instance_type: "c5.2xlarge"
+        
+    - name: "gcp"
+      region: "us-central1"
+      weight: 30
+      enabled: true
+      configuration:
+        cluster_name: "streaming-gcp-central"
+        node_count: 2
+        machine_type: "n2-standard-8"
+        
+    - name: "azure"
+      region: "eastus"
+      weight: 20
+      enabled: false
+      configuration:
+        cluster_name: "streaming-azure-east"
+        node_count: 2
+        vm_size: "Standard_D8s_v3"
+
+load_balancing:
+  algorithm: "weighted-round-robin"
+  health_check:
+    interval: 30
+    timeout: 10
+    healthy_threshold: 2
+    unhealthy_threshold: 3
+    
+  failover:
+    enabled: true
+    timeout: 60
+    strategy: "priority-based"
+
+database:
+  multi_region: true
+  replication:
+    - region: "us-west-2"
+      priority: 1
+    - region: "us-east-1"
+      priority: 2
+  consistency: "eventual"
+
+storage:
+  cdn:
+    provider: "cloudfront"
+    regions: ["global"]
+    cache_ttl: 3600
+    
+  origin:
+    - provider: "s3"
+      region: "us-west-2"
+    - provider: "gcs"
+      region: "us-central1"
+
+monitoring:
+  centralized: true
+  providers:
+    - name: "cloudwatch"
+      regions: ["us-west-2", "us-east-1"]
+    - name: "stackdriver"
+      regions: ["us-central1"]
+      
+  alerts:
+    - metric: "cpu_usage"
+      threshold: 80
+      duration: 300
+    - metric: "memory_usage"
+      threshold: 85
+      duration: 300

@@ -1,0 +1,37 @@
+# docker/Dockerfile.server
+FROM ubuntu:22.04
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    libboost-all-dev \
+    libssl-dev \
+    libsdl2-dev \
+    libva-dev \
+    libvdpau-dev \
+    nvidia-cuda-toolkit \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create application user
+RUN useradd -m -s /bin/bash streaming
+USER streaming
+WORKDIR /home/streaming
+
+# Copy application
+COPY --chown=streaming:streaming bin/streaming-server .
+COPY --chown=streaming:streaming config/ ./config/
+COPY --chown=streaming:streaming scripts/ ./scripts/
+
+# Create directories
+RUN mkdir -p logs data records
+
+# Expose ports
+EXPOSE 8080 1935 8081 9090
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD ./scripts/health-check.sh
+
+# Start command
+CMD ["./streaming-server", "--config", "./config/server.yaml"]

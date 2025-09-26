@@ -1,0 +1,55 @@
+# config/encoder.yaml
+video:
+  # Codec settings
+  default_codec: "h264"
+  available_codecs: ["h264", "h265", "av1"]
+  
+  # H.264 settings
+  h264:
+    preset: "medium"
+    profile: "high"
+    level: "4.1"
+    max_b_frames: 2
+    ref_frames: 3
+    crf: 23
+    
+  # H.265 settings  
+  h265:
+    preset: "medium"
+    profile: "main"
+    level: "4.1"
+    crf: 28
+    
+  # AV1 settings
+  av1:
+    cpu_used: 6
+    end_usage: "vbr"
+    target_bitrate: 2000000
+
+audio:
+  # Codec settings
+  default_codec: "opus"
+  available_codecs: ["opus", "aac"]
+  
+  # Opus settings
+  opus:
+    application: "audio"
+    bitrate: 128000
+    complexity: 5
+    frame_duration: 20  # ms
+    
+  # AAC settings
+  aac:
+    profile: "lc"
+    bitrate: 128000
+
+optimization:
+  # Hardware acceleration
+  enable_vaapi: true
+  enable_nvenc: true
+  enable_amf: true
+  
+  # Performance
+  max_encoding_threads: 8
+  frame_threading: true
+  lookahead_depth: 10
