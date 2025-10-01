@@ -106,6 +106,8 @@
         "syncstream": "cpp",
         "typeindex": "cpp",
         "unordered_set": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "scoped_allocator": "cpp",
+        "stdfloat": "cpp"
     }
 }
