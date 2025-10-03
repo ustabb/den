@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3076BED-1CD4-385D-9C04-7FA602C2E6D2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>protoc-gen-upbdefs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">protoc-gen-upbdefs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">protoc-gen-upbdefs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">protoc-gen-upbdefs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">protoc-gen-upbdefs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">protoc-gen-upbdefs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">protoc-gen-upbdefs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">protoc-gen-upbdefs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">protoc-gen-upbdefs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>third_party\utf8_range\Debug\libutf8_validity.lib;Debug\libupbd.lib;..\abseil-cpp\absl\base\Debug\absl_base.lib;..\abseil-cpp\absl\strings\Debug\absl_cord.lib;..\abseil-cpp\absl\log\Debug\absl_die_if_null.lib;..\abseil-cpp\absl\hash\Debug\absl_hash.lib;..\abseil-cpp\absl\log\Debug\absl_log_initialize.lib;..\abseil-cpp\absl\log\Debug\absl_log_globals.lib;..\abseil-cpp\absl\base\Debug\absl_log_severity.lib;..\abseil-cpp\absl\random\Debug\absl_random_distributions.lib;..\abseil-cpp\absl\status\Debug\absl_status.lib;..\abseil-cpp\absl\status\Debug\absl_statusor.lib;..\abseil-cpp\absl\strings\Debug\absl_strings.lib;..\abseil-cpp\absl\synchronization\Debug\absl_synchronization.lib;..\abseil-cpp\absl\time\Debug\absl_time.lib;third_party\utf8_range\Debug\libutf8_range.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_check_op.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_conditions.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_message.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_nullguard.lib;..\abseil-cpp\absl\debugging\Debug\absl_examine_stack.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_format.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_structured_proto.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_proto.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_log_sink_set.lib;..\abseil-cpp\absl\log\Debug\absl_log_sink.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_internal.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_marshalling.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_reflection.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_config.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_program_name.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_private_handle_accessor.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_commandlineflag.lib;..\abseil-cpp\absl\flags\Debug\absl_flags_commandlineflag_internal.lib;..\abseil-cpp\absl\log\Debug\absl_log_globals.lib;..\abseil-cpp\absl\log\Debug\absl_vlog_config_internal.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_fnmatch.lib;..\abseil-cpp\absl\log\Debug\absl_log_internal_globals.lib;..\abseil-cpp\absl\container\Debug\absl_raw_hash_set.lib;..\abseil-cpp\absl\hash\Debug\absl_hash.lib;..\abseil-cpp\absl\hash\Debug\absl_city.lib;..\abseil-cpp\absl\hash\Debug\absl_low_level_hash.lib;..\abseil-cpp\absl\container\Debug\absl_hashtablez_sampler.lib;..\abseil-cpp\absl\random\Debug\absl_random_distributions.lib;..\abseil-cpp\absl\random\Debug\absl_random_seed_sequences.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_entropy_pool.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_randen.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_randen_hwaes.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_randen_hwaes_impl.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_randen_slow.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_platform.lib;..\abseil-cpp\absl\random\Debug\absl_random_internal_seed_material.lib;..\abseil-cpp\absl\random\Debug\absl_random_seed_gen_exception.lib;..\abseil-cpp\absl\status\Debug\absl_status.lib;..\abseil-cpp\absl\strings\Debug\absl_cord.lib;..\abseil-cpp\absl\strings\Debug\absl_cordz_info.lib;..\abseil-cpp\absl\strings\Debug\absl_cord_internal.lib;..\abseil-cpp\absl\strings\Debug\absl_cordz_functions.lib;..\abseil-cpp\absl\profiling\Debug\absl_exponential_biased.lib;..\abseil-cpp\absl\strings\Debug\absl_cordz_handle.lib;..\abseil-cpp\absl\synchronization\Debug\absl_synchronization.lib;..\abseil-cpp\absl\synchronization\Debug\absl_graphcycles_internal.lib;..\abseil-cpp\absl\synchronization\Debug\absl_kernel_timeout_internal.lib;..\abseil-cpp\absl\time\Debug\absl_time.lib;..\abseil-cpp\absl\time\Debug\absl_civil_time.lib;..\abseil-cpp\absl\time\Debug\absl_time_zone.lib;..\abseil-cpp\absl\base\Debug\absl_tracing_internal.lib;..\abseil-cpp\absl\crc\Debug\absl_crc_cord_state.lib;..\abseil-cpp\absl\crc\Debug\absl_crc32c.lib;..\abseil-cpp\absl\crc\Debug\absl_crc_internal.lib;..\abseil-cpp\absl\crc\Debug\absl_crc_cpu_detect.lib;..\abseil-cpp\absl\debugging\Debug\absl_stacktrace.lib;..\abseil-cpp\absl\debugging\Debug\absl_leak_check.lib;..\abseil-cpp\absl\base\Debug\absl_strerror.lib;..\abseil-cpp\absl\debugging\Debug\absl_symbolize.lib;..\abseil-cpp\absl\debugging\Debug\absl_debugging_internal.lib;..\abseil-cpp\absl\base\Debug\absl_malloc_internal.lib;..\abseil-cpp\absl\debugging\Debug\absl_demangle_internal.lib;..\abseil-cpp\absl\debugging\Debug\absl_demangle_rust.lib;..\abseil-cpp\absl\debugging\Debug\absl_decode_rust_punycode.lib;..\abseil-cpp\absl\debugging\Debug\absl_utf8_for_code_point.lib;..\abseil-cpp\absl\strings\Debug\absl_str_format_internal.lib;..\abseil-cpp\absl\strings\Debug\absl_strings.lib;..\abseil-cpp\absl\strings\Debug\absl_string_view.lib;..\abseil-cpp\absl\base\Debug\absl_throw_delegate.lib;..\abseil-cpp\absl\numeric\Debug\absl_int128.lib;..\abseil-cpp\absl\strings\Debug\absl_strings_internal.lib;..\abseil-cpp\absl\base\Debug\absl_base.lib;..\abseil-cpp\absl\base\Debug\absl_raw_logging_internal.lib;..\abseil-cpp\absl\base\Debug\absl_log_severity.lib;..\abseil-cpp\absl\base\Debug\absl_spinlock_wait.lib;-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/Debug/protoc-gen-upbdefs.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/Debug/protoc-gen-upbdefs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>third_party\utf8_range\Release\libutf8_validity.lib;Release\libupb.lib;..\abseil-cpp\absl\base\Release\absl_base.lib;..\abseil-cpp\absl\strings\Release\absl_cord.lib;..\abseil-cpp\absl\log\Release\absl_die_if_null.lib;..\abseil-cpp\absl\hash\Release\absl_hash.lib;..\abseil-cpp\absl\log\Release\absl_log_initialize.lib;..\abseil-cpp\absl\log\Release\absl_log_globals.lib;..\abseil-cpp\absl\base\Release\absl_log_severity.lib;..\abseil-cpp\absl\random\Release\absl_random_distributions.lib;..\abseil-cpp\absl\status\Release\absl_status.lib;..\abseil-cpp\absl\status\Release\absl_statusor.lib;..\abseil-cpp\absl\strings\Release\absl_strings.lib;..\abseil-cpp\absl\synchronization\Release\absl_synchronization.lib;..\abseil-cpp\absl\time\Release\absl_time.lib;third_party\utf8_range\Release\libutf8_range.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_check_op.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_conditions.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_message.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_nullguard.lib;..\abseil-cpp\absl\debugging\Release\absl_examine_stack.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_format.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_structured_proto.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_proto.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_log_sink_set.lib;..\abseil-cpp\absl\log\Release\absl_log_sink.lib;..\abseil-cpp\absl\flags\Release\absl_flags_internal.lib;..\abseil-cpp\absl\flags\Release\absl_flags_marshalling.lib;..\abseil-cpp\absl\flags\Release\absl_flags_reflection.lib;..\abseil-cpp\absl\flags\Release\absl_flags_config.lib;..\abseil-cpp\absl\flags\Release\absl_flags_program_name.lib;..\abseil-cpp\absl\flags\Release\absl_flags_private_handle_accessor.lib;..\abseil-cpp\absl\flags\Release\absl_flags_commandlineflag.lib;..\abseil-cpp\absl\flags\Release\absl_flags_commandlineflag_internal.lib;..\abseil-cpp\absl\log\Release\absl_log_globals.lib;..\abseil-cpp\absl\log\Release\absl_vlog_config_internal.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_fnmatch.lib;..\abseil-cpp\absl\log\Release\absl_log_internal_globals.lib;..\abseil-cpp\absl\container\Release\absl_raw_hash_set.lib;..\abseil-cpp\absl\hash\Release\absl_hash.lib;..\abseil-cpp\absl\hash\Release\absl_city.lib;..\abseil-cpp\absl\hash\Release\absl_low_level_hash.lib;..\abseil-cpp\absl\container\Release\absl_hashtablez_sampler.lib;..\abseil-cpp\absl\random\Release\absl_random_distributions.lib;..\abseil-cpp\absl\random\Release\absl_random_seed_sequences.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_entropy_pool.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_randen.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_randen_hwaes.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_randen_hwaes_impl.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_randen_slow.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_platform.lib;..\abseil-cpp\absl\random\Release\absl_random_internal_seed_material.lib;..\abseil-cpp\absl\random\Release\absl_random_seed_gen_exception.lib;..\abseil-cpp\absl\status\Release\absl_status.lib;..\abseil-cpp\absl\strings\Release\absl_cord.lib;..\abseil-cpp\absl\strings\Release\absl_cordz_info.lib;..\abseil-cpp\absl\strings\Release\absl_cord_internal.lib;..\abseil-cpp\absl\strings\Release\absl_cordz_functions.lib;..\abseil-cpp\absl\profiling\Release\absl_exponential_biased.lib;..\abseil-cpp\absl\strings\Release\absl_cordz_handle.lib;..\abseil-cpp\absl\synchronization\Release\absl_synchronization.lib;..\abseil-cpp\absl\synchronization\Release\absl_graphcycles_internal.lib;..\abseil-cpp\absl\synchronization\Release\absl_kernel_timeout_internal.lib;..\abseil-cpp\absl\time\Release\absl_time.lib;..\abseil-cpp\absl\time\Release\absl_civil_time.lib;..\abseil-cpp\absl\time\Release\absl_time_zone.lib;..\abseil-cpp\absl\base\Release\absl_tracing_internal.lib;..\abseil-cpp\absl\crc\Release\absl_crc_cord_state.lib;..\abseil-cpp\absl\crc\Release\absl_crc32c.lib;..\abseil-cpp\absl\crc\Release\absl_crc_internal.lib;..\abseil-cpp\absl\crc\Release\absl_crc_cpu_detect.lib;..\abseil-cpp\absl\debugging\Release\absl_stacktrace.lib;..\abseil-cpp\absl\debugging\Release\absl_leak_check.lib;..\abseil-cpp\absl\base\Release\absl_strerror.lib;..\abseil-cpp\absl\debugging\Release\absl_symbolize.lib;..\abseil-cpp\absl\debugging\Release\absl_debugging_internal.lib;..\abseil-cpp\absl\base\Release\absl_malloc_internal.lib;..\abseil-cpp\absl\debugging\Release\absl_demangle_internal.lib;..\abseil-cpp\absl\debugging\Release\absl_demangle_rust.lib;..\abseil-cpp\absl\debugging\Release\absl_decode_rust_punycode.lib;..\abseil-cpp\absl\debugging\Release\absl_utf8_for_code_point.lib;..\abseil-cpp\absl\strings\Release\absl_str_format_internal.lib;..\abseil-cpp\absl\strings\Release\absl_strings.lib;..\abseil-cpp\absl\strings\Release\absl_string_view.lib;..\abseil-cpp\absl\base\Release\absl_throw_delegate.lib;..\abseil-cpp\absl\numeric\Release\absl_int128.lib;..\abseil-cpp\absl\strings\Release\absl_strings_internal.lib;..\abseil-cpp\absl\base\Release\absl_base.lib;..\abseil-cpp\absl\base\Release\absl_raw_logging_internal.lib;..\abseil-cpp\absl\base\Release\absl_log_severity.lib;..\abseil-cpp\absl\base\Release\absl_spinlock_wait.lib;-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/Release/protoc-gen-upbdefs.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/Release/protoc-gen-upbdefs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>third_party\utf8_range\MinSizeRel\libutf8_validity.lib;MinSizeRel\libupb.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_base.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cord.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_die_if_null.lib;..\abseil-cpp\absl\hash\MinSizeRel\absl_hash.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_initialize.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_globals.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_log_severity.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_distributions.lib;..\abseil-cpp\absl\status\MinSizeRel\absl_status.lib;..\abseil-cpp\absl\status\MinSizeRel\absl_statusor.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_strings.lib;..\abseil-cpp\absl\synchronization\MinSizeRel\absl_synchronization.lib;..\abseil-cpp\absl\time\MinSizeRel\absl_time.lib;third_party\utf8_range\MinSizeRel\libutf8_range.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_check_op.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_conditions.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_message.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_nullguard.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_examine_stack.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_format.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_structured_proto.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_proto.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_log_sink_set.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_sink.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_internal.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_marshalling.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_reflection.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_config.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_program_name.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_private_handle_accessor.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_commandlineflag.lib;..\abseil-cpp\absl\flags\MinSizeRel\absl_flags_commandlineflag_internal.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_globals.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_vlog_config_internal.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_fnmatch.lib;..\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_globals.lib;..\abseil-cpp\absl\container\MinSizeRel\absl_raw_hash_set.lib;..\abseil-cpp\absl\hash\MinSizeRel\absl_hash.lib;..\abseil-cpp\absl\hash\MinSizeRel\absl_city.lib;..\abseil-cpp\absl\hash\MinSizeRel\absl_low_level_hash.lib;..\abseil-cpp\absl\container\MinSizeRel\absl_hashtablez_sampler.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_distributions.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_seed_sequences.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_entropy_pool.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_hwaes.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_hwaes_impl.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_slow.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_platform.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_seed_material.lib;..\abseil-cpp\absl\random\MinSizeRel\absl_random_seed_gen_exception.lib;..\abseil-cpp\absl\status\MinSizeRel\absl_status.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cord.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_info.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cord_internal.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_functions.lib;..\abseil-cpp\absl\profiling\MinSizeRel\absl_exponential_biased.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_handle.lib;..\abseil-cpp\absl\synchronization\MinSizeRel\absl_synchronization.lib;..\abseil-cpp\absl\synchronization\MinSizeRel\absl_graphcycles_internal.lib;..\abseil-cpp\absl\synchronization\MinSizeRel\absl_kernel_timeout_internal.lib;..\abseil-cpp\absl\time\MinSizeRel\absl_time.lib;..\abseil-cpp\absl\time\MinSizeRel\absl_civil_time.lib;..\abseil-cpp\absl\time\MinSizeRel\absl_time_zone.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_tracing_internal.lib;..\abseil-cpp\absl\crc\MinSizeRel\absl_crc_cord_state.lib;..\abseil-cpp\absl\crc\MinSizeRel\absl_crc32c.lib;..\abseil-cpp\absl\crc\MinSizeRel\absl_crc_internal.lib;..\abseil-cpp\absl\crc\MinSizeRel\absl_crc_cpu_detect.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_stacktrace.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_leak_check.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_strerror.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_symbolize.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_debugging_internal.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_malloc_internal.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_demangle_internal.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_demangle_rust.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_decode_rust_punycode.lib;..\abseil-cpp\absl\debugging\MinSizeRel\absl_utf8_for_code_point.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_str_format_internal.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_strings.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_string_view.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_throw_delegate.lib;..\abseil-cpp\absl\numeric\MinSizeRel\absl_int128.lib;..\abseil-cpp\absl\strings\MinSizeRel\absl_strings_internal.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_base.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_raw_logging_internal.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_log_severity.lib;..\abseil-cpp\absl\base\MinSizeRel\absl_spinlock_wait.lib;-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/MinSizeRel/protoc-gen-upbdefs.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/MinSizeRel/protoc-gen-upbdefs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\build\third_party\protobuf;C:\Users\Usta\Desktop\grpc\third_party\protobuf;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;C:\Users\Usta\Desktop\grpc\third_party\protobuf\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>third_party\utf8_range\RelWithDebInfo\libutf8_validity.lib;RelWithDebInfo\libupb.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_base.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_die_if_null.lib;..\abseil-cpp\absl\hash\RelWithDebInfo\absl_hash.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_initialize.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_globals.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_log_severity.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_distributions.lib;..\abseil-cpp\absl\status\RelWithDebInfo\absl_status.lib;..\abseil-cpp\absl\status\RelWithDebInfo\absl_statusor.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings.lib;..\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_synchronization.lib;..\abseil-cpp\absl\time\RelWithDebInfo\absl_time.lib;third_party\utf8_range\RelWithDebInfo\libutf8_range.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_check_op.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_conditions.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_message.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_nullguard.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_examine_stack.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_format.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_structured_proto.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_proto.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_log_sink_set.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_sink.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_internal.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_marshalling.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_reflection.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_config.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_program_name.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_private_handle_accessor.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_commandlineflag.lib;..\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_commandlineflag_internal.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_globals.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_vlog_config_internal.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_fnmatch.lib;..\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_globals.lib;..\abseil-cpp\absl\container\RelWithDebInfo\absl_raw_hash_set.lib;..\abseil-cpp\absl\hash\RelWithDebInfo\absl_hash.lib;..\abseil-cpp\absl\hash\RelWithDebInfo\absl_city.lib;..\abseil-cpp\absl\hash\RelWithDebInfo\absl_low_level_hash.lib;..\abseil-cpp\absl\container\RelWithDebInfo\absl_hashtablez_sampler.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_distributions.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_seed_sequences.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_entropy_pool.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_hwaes.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_hwaes_impl.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_slow.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_platform.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_seed_material.lib;..\abseil-cpp\absl\random\RelWithDebInfo\absl_random_seed_gen_exception.lib;..\abseil-cpp\absl\status\RelWithDebInfo\absl_status.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_info.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord_internal.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_functions.lib;..\abseil-cpp\absl\profiling\RelWithDebInfo\absl_exponential_biased.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_handle.lib;..\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_synchronization.lib;..\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_graphcycles_internal.lib;..\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_kernel_timeout_internal.lib;..\abseil-cpp\absl\time\RelWithDebInfo\absl_time.lib;..\abseil-cpp\absl\time\RelWithDebInfo\absl_civil_time.lib;..\abseil-cpp\absl\time\RelWithDebInfo\absl_time_zone.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_tracing_internal.lib;..\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_cord_state.lib;..\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc32c.lib;..\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_internal.lib;..\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_cpu_detect.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_stacktrace.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_leak_check.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_strerror.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_symbolize.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_debugging_internal.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_malloc_internal.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_demangle_internal.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_demangle_rust.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_decode_rust_punycode.lib;..\abseil-cpp\absl\debugging\RelWithDebInfo\absl_utf8_for_code_point.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_str_format_internal.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_string_view.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_throw_delegate.lib;..\abseil-cpp\absl\numeric\RelWithDebInfo\absl_int128.lib;..\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings_internal.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_base.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_raw_logging_internal.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_log_severity.lib;..\abseil-cpp\absl\base\RelWithDebInfo\absl_spinlock_wait.lib;-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/RelWithDebInfo/protoc-gen-upbdefs.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/RelWithDebInfo/protoc-gen-upbdefs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\install.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libupb.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-generate.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-options.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb_generators.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\utf8_range.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\version.rc.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\file_lists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\install.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libupb.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-generate.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-options.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb_generators.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\utf8_range.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\version.rc.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\file_lists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\install.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libupb.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-generate.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-options.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb_generators.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\utf8_range.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\version.rc.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\file_lists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\install.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotobuf.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libprotoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\libupb.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-generate.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf-options.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protobuf.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\protoc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb.pc.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\upb_generators.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\utf8_range.cmake;C:\Users\Usta\Desktop\grpc\third_party\protobuf\cmake\version.rc.in;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\file_lists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\any.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\any_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena_align.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arenastring.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arenaz_sampler.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\code_generator.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\code_generator_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\plugin.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/plugin.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\plugin.pb.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\retention.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\cpp_features.pb.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\feature_resolver.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_enum_util.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_bases.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_reflection.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_full.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_gen.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\implicit_weak_message.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\inlined_string_field.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\internal_feature_helper.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\gzip_stream.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\io_win32.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\printer.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_sink.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map_field.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\message.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\micro_string.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\parse_context.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\port.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\raw_ptr.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_mode.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\repeated_ptr_field.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\service.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\common.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/stubs/common.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\text_format.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\wire_format.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\wire_format_lite.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\common.cc">
+      <ObjectFileName>$(IntDir)/upb_generator/common.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\common\names.cc">
+      <ObjectFileName>$(IntDir)/upb_generator/common/names.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\file_layout.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\minitable\names.cc">
+      <ObjectFileName>$(IntDir)/upb_generator/minitable/names.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\minitable\names_internal.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\plugin.cc">
+      <ObjectFileName>$(IntDir)/upb_generator/plugin.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\reflection\generator.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\reflection\header.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\reflection\names.cc">
+      <ObjectFileName>$(IntDir)/upb_generator/reflection/names.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\reflection\source.cc" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\any.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena_align.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena_allocation_policy.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arena_cleanup.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arenastring.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\arenaz_sampler.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\code_generator.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\code_generator_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\plugin.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\plugin.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\retention.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\compiler\scc.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\cpp_edition_defaults.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\cpp_features.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor_database.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\descriptor_visitor.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\dynamic_message.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\endian.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\explicitly_constructed.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\extension_set.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\extension_set_inl.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\feature_resolver.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\field_access_listener.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_enum_reflection.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_enum_util.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_bases.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_reflection.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_decl.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_gen.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_tctable_impl.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\generated_message_util.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\has_bits.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\implicit_weak_message.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\inlined_string_field.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\internal_feature_helper.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\internal_visibility.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\coded_stream.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\gzip_stream.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\io_win32.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\printer.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\strtod.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\tokenizer.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_sink.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map_entry.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map_field.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map_field_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\map_type_handler.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\message.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\message_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\metadata.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\metadata_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\micro_string.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\parse_context.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\port.h" />
+    <None Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\port_def.inc">
+    </None>
+    <None Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\port_undef.inc">
+    </None>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\raw_ptr.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_internal.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_mode.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_ops.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_visit_field_info.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\reflection_visit_fields.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\repeated_field.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\repeated_ptr_field.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\runtime_version.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\serial_arena.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\service.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\string_block.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\callback.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\common.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\platform_macros.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\port.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\stubs\status_macros.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\text_format.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\thread_safe_arena.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\unknown_field_set.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\varint_shuffle.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\wire_format.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\src\google\protobuf\wire_format_lite.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\common.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\common\names.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\file_layout.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\minitable\names.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\minitable\names_internal.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\plugin.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\plugin_bootstrap.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\reflection\names.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb_minitable.h" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb_minitable.c" />
+    <ResourceCompile Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\version.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\ZERO_CHECK.vcxproj">
+      <Project>{9F31133B-3FFC-3DFA-9AD3-012CCB3C71D9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\base.vcxproj">
+      <Project>{C308001B-85B9-3822-9AB3-490E4712F0F9}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\city.vcxproj">
+      <Project>{69CA41F0-0181-3352-BEE0-79BC3F71BE02}</Project>
+      <Name>city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\civil_time.vcxproj">
+      <Project>{28DC9888-9F99-3AFE-8B32-DADB032190B1}</Project>
+      <Name>civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cord.vcxproj">
+      <Project>{31826FA7-CC22-3775-9F73-5B5ACCC21358}</Project>
+      <Name>cord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cord_internal.vcxproj">
+      <Project>{15C1866B-7BCB-3749-A509-D017160C547B}</Project>
+      <Name>cord_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_functions.vcxproj">
+      <Project>{EDF989A5-9445-3FB1-82A0-803E9EA39FAC}</Project>
+      <Name>cordz_functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_handle.vcxproj">
+      <Project>{7E8BE581-7E69-38B4-9353-EEFA01D3EE7B}</Project>
+      <Name>cordz_handle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_info.vcxproj">
+      <Project>{767511D3-9869-3D30-90EE-A588DA3E8495}</Project>
+      <Name>cordz_info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc32c.vcxproj">
+      <Project>{11C4DB95-8551-37E6-B1D3-3FE4E6444193}</Project>
+      <Name>crc32c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_cord_state.vcxproj">
+      <Project>{9DCFC8D5-41E4-31E3-8884-48CFDA43D7E3}</Project>
+      <Name>crc_cord_state</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_cpu_detect.vcxproj">
+      <Project>{27C0B7DE-4405-39A0-AA44-E367B3C1E62B}</Project>
+      <Name>crc_cpu_detect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_internal.vcxproj">
+      <Project>{E1D7755B-7BDC-3210-89C3-8F6B037A7500}</Project>
+      <Name>crc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\debugging_internal.vcxproj">
+      <Project>{480FF80A-C424-3CC1-9AEE-F306FD53F198}</Project>
+      <Name>debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\decode_rust_punycode.vcxproj">
+      <Project>{3F43C9B5-E09B-39A3-B57C-5737396DEF27}</Project>
+      <Name>decode_rust_punycode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\demangle_internal.vcxproj">
+      <Project>{A94FC1B2-4D44-3348-A0C2-5ED42FED61B0}</Project>
+      <Name>demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\demangle_rust.vcxproj">
+      <Project>{BAEB0FDC-DE07-36D1-AED7-A1A7620F7D3A}</Project>
+      <Name>demangle_rust</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\die_if_null.vcxproj">
+      <Project>{6BC067AB-58B5-3DF2-99C1-BD242B2D59C2}</Project>
+      <Name>die_if_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\examine_stack.vcxproj">
+      <Project>{6862CD13-658C-38BB-99AC-C886C80252AD}</Project>
+      <Name>examine_stack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\profiling\exponential_biased.vcxproj">
+      <Project>{13BF555F-930A-3FBA-872F-0FBD085FD4C0}</Project>
+      <Name>exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag.vcxproj">
+      <Project>{EACB4ECA-7B7F-342B-85C6-3BA8B5D7EEEA}</Project>
+      <Name>flags_commandlineflag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag_internal.vcxproj">
+      <Project>{5CA7B5D2-469C-3FBD-8761-BD1E04D63463}</Project>
+      <Name>flags_commandlineflag_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_config.vcxproj">
+      <Project>{25725620-3CFE-3ADD-93AA-0B9ADF44C85E}</Project>
+      <Name>flags_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_internal.vcxproj">
+      <Project>{FFE9BA42-D72A-3610-835F-A7132B73DCEF}</Project>
+      <Name>flags_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_marshalling.vcxproj">
+      <Project>{6984F061-445E-3CD8-989D-B56BCDA7D6C9}</Project>
+      <Name>flags_marshalling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_private_handle_accessor.vcxproj">
+      <Project>{EE0F5425-B433-3DC1-8F97-6A749B0CC925}</Project>
+      <Name>flags_private_handle_accessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_program_name.vcxproj">
+      <Project>{E5275BEC-0DED-3727-A32C-1DFE1040EAF8}</Project>
+      <Name>flags_program_name</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_reflection.vcxproj">
+      <Project>{1DCEA334-46CA-31C9-834E-25935C9824CE}</Project>
+      <Name>flags_reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\graphcycles_internal.vcxproj">
+      <Project>{2076BD96-E325-37CD-95B9-A904F877FC86}</Project>
+      <Name>graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\hash.vcxproj">
+      <Project>{3174645C-6353-3458-A20A-6F1B899ACBF7}</Project>
+      <Name>hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\container\hashtablez_sampler.vcxproj">
+      <Project>{8032E165-65B2-39A1-A460-9A4286889192}</Project>
+      <Name>hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\numeric\int128.vcxproj">
+      <Project>{33CC478A-FE5E-34A8-9BF7-C8CB617B44CF}</Project>
+      <Name>int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\kernel_timeout_internal.vcxproj">
+      <Project>{2E25299A-8B11-3598-B2B3-35A0EDFEE46E}</Project>
+      <Name>kernel_timeout_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\leak_check.vcxproj">
+      <Project>{38233039-E33C-3CB7-B6C2-DD336820DFF7}</Project>
+      <Name>leak_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\libupb.vcxproj">
+      <Project>{9B2E3A19-A6B5-3DF6-AD61-097919519B94}</Project>
+      <Name>libupb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_globals.vcxproj">
+      <Project>{5CCCE874-A458-3635-8BAF-E436F0DE8E7B}</Project>
+      <Name>log_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_initialize.vcxproj">
+      <Project>{DBEE4ED8-9C24-3C7E-9705-1D4263162A5E}</Project>
+      <Name>log_initialize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_check_op.vcxproj">
+      <Project>{F7640180-9F02-33FA-94AA-2C215F52445E}</Project>
+      <Name>log_internal_check_op</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_conditions.vcxproj">
+      <Project>{5EA9D362-8645-364D-AE53-7F2A0B491B5D}</Project>
+      <Name>log_internal_conditions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_fnmatch.vcxproj">
+      <Project>{FC462211-C784-300E-9560-EF6301C4CC76}</Project>
+      <Name>log_internal_fnmatch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_format.vcxproj">
+      <Project>{144AB2CA-69EB-31F4-BCB2-A06C157A0B39}</Project>
+      <Name>log_internal_format</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_globals.vcxproj">
+      <Project>{65DA2C0E-BC39-3236-BA55-327D83D38411}</Project>
+      <Name>log_internal_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_log_sink_set.vcxproj">
+      <Project>{CA88502A-56F8-38BA-8708-6A09FD60D21B}</Project>
+      <Name>log_internal_log_sink_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_message.vcxproj">
+      <Project>{D49F2B90-A88F-3BC3-8E54-AE243C1E68A3}</Project>
+      <Name>log_internal_message</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_nullguard.vcxproj">
+      <Project>{9DD86E18-BD9A-3A5B-88C0-7FC2B71DCA6F}</Project>
+      <Name>log_internal_nullguard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_proto.vcxproj">
+      <Project>{055120C5-D88C-33D7-B23B-368BF5B73A14}</Project>
+      <Name>log_internal_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_structured_proto.vcxproj">
+      <Project>{5C81A960-4575-33F1-A235-C7A3771A81BC}</Project>
+      <Name>log_internal_structured_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\log_severity.vcxproj">
+      <Project>{CE027A99-5364-3217-B691-BABF7B9F2608}</Project>
+      <Name>log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_sink.vcxproj">
+      <Project>{CD6EC654-BEB0-3122-8F09-41EE57912F1F}</Project>
+      <Name>log_sink</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\low_level_hash.vcxproj">
+      <Project>{87F5F25E-F4B6-32B8-8B29-470F6FF88A1A}</Project>
+      <Name>low_level_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\malloc_internal.vcxproj">
+      <Project>{FED274E7-76A3-3E3B-B407-7E3E6D23E7F9}</Project>
+      <Name>malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_distributions.vcxproj">
+      <Project>{C1DBFAB0-9922-3100-A4B7-A6AC216E7909}</Project>
+      <Name>random_distributions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_entropy_pool.vcxproj">
+      <Project>{EBDEEC78-6AA1-3911-AC47-3F5A6B1F5722}</Project>
+      <Name>random_internal_entropy_pool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_platform.vcxproj">
+      <Project>{13EF307D-1898-3C22-9337-E7BA71BCA697}</Project>
+      <Name>random_internal_platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen.vcxproj">
+      <Project>{112047E4-BD07-3A95-AA85-F1EC0BC5D5E1}</Project>
+      <Name>random_internal_randen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes.vcxproj">
+      <Project>{F9965425-F8A7-3DDB-8F83-B9397E78C65C}</Project>
+      <Name>random_internal_randen_hwaes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes_impl.vcxproj">
+      <Project>{8B703419-325B-35D9-A204-0A503481B618}</Project>
+      <Name>random_internal_randen_hwaes_impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_slow.vcxproj">
+      <Project>{8BCA3DB7-2FCB-3106-9C5A-0D3F3062C4F0}</Project>
+      <Name>random_internal_randen_slow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_seed_material.vcxproj">
+      <Project>{C6DF2C6D-868D-30FC-9504-21471DEF76AA}</Project>
+      <Name>random_internal_seed_material</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_seed_gen_exception.vcxproj">
+      <Project>{745B0BB4-1AAD-34B2-924F-57CDEA57A229}</Project>
+      <Name>random_seed_gen_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_seed_sequences.vcxproj">
+      <Project>{2E2B5A9B-7EC3-3960-A5E3-55D0D9284AD9}</Project>
+      <Name>random_seed_sequences</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\container\raw_hash_set.vcxproj">
+      <Project>{3FBE37E2-A2D7-38CF-9E58-694A20B89B38}</Project>
+      <Name>raw_hash_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\raw_logging_internal.vcxproj">
+      <Project>{AE5F0E01-D751-37F3-BE42-9D41D2C585E7}</Project>
+      <Name>raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\spinlock_wait.vcxproj">
+      <Project>{064788AD-25B6-3ECC-BB2B-6A0E0168BDC8}</Project>
+      <Name>spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\stacktrace.vcxproj">
+      <Project>{41CDF4B2-E1B3-37CF-BDEA-CA649EDC3459}</Project>
+      <Name>stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\status\status.vcxproj">
+      <Project>{51E4DE28-81C6-3AFB-97D4-7D09212A4457}</Project>
+      <Name>status</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\status\statusor.vcxproj">
+      <Project>{65BF0FBA-9B21-3CC8-A0D2-1A2979CF698A}</Project>
+      <Name>statusor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\str_format_internal.vcxproj">
+      <Project>{96DA3100-9F90-385C-B977-EB3F5DC056A3}</Project>
+      <Name>str_format_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\strerror.vcxproj">
+      <Project>{44F87946-1600-3906-B296-DD318BA76086}</Project>
+      <Name>strerror</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\string_view.vcxproj">
+      <Project>{C1D9B4E6-BE79-3311-955A-125DC67525B7}</Project>
+      <Name>string_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\strings.vcxproj">
+      <Project>{71755CDE-862E-3ECD-B2E4-F91A8BF80B88}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\strings_internal.vcxproj">
+      <Project>{9D7A7C1E-1C40-3788-AC56-043222EEC575}</Project>
+      <Name>strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\symbolize.vcxproj">
+      <Project>{BA210C18-62A1-3AA4-B4AD-B42455A3438E}</Project>
+      <Name>symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\synchronization.vcxproj">
+      <Project>{1970E00B-7734-3B13-AA8D-DE48BC2E64B9}</Project>
+      <Name>synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\throw_delegate.vcxproj">
+      <Project>{19E5B018-451D-303E-9C7B-3CB680B37A06}</Project>
+      <Name>throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\time.vcxproj">
+      <Project>{0C99697C-8731-33AC-A655-F8F1BB55B686}</Project>
+      <Name>time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\time_zone.vcxproj">
+      <Project>{1A5DE2E4-13A0-3DE9-8BA6-E7AEF4015C90}</Project>
+      <Name>time_zone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\tracing_internal.vcxproj">
+      <Project>{CDDE788A-0781-3715-AB4B-D8E791507F51}</Project>
+      <Name>tracing_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\utf8_for_code_point.vcxproj">
+      <Project>{9F4E4D84-3462-3AAA-B3F5-1914A483798B}</Project>
+      <Name>utf8_for_code_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\third_party\utf8_range\utf8_range.vcxproj">
+      <Project>{C1C6D36B-2C77-3970-8E7E-660115A4FABF}</Project>
+      <Name>utf8_range</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\third_party\utf8_range\utf8_validity.vcxproj">
+      <Project>{982E1383-5109-35E6-BA2A-99848418CC20}</Project>
+      <Name>utf8_validity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\vlog_config_internal.vcxproj">
+      <Project>{B71AB11C-1FB4-3D9C-B212-163D6B346D7E}</Project>
+      <Name>vlog_config_internal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen\google\protobuf\descriptor.upb_minitable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\message\copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\message\merge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\def_pool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\def_type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\desc_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\enum_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\enum_reserved_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\enum_value_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\extension_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\field_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\file_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\internal\def_builder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\internal\strdup2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\message_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\message_reserved_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\method_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\oneof_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\upb\upb\reflection\service_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9EA8C4E9-3028-34A9-8363-E2B52F4758C2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

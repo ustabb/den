@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37941B1E-BA20-3871-A0D5-9D0B1D8C5172}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>crypto</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">crypto.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">crypto.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">crypto.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">crypto.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/boringssl-with-bazel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/boringssl-with-bazel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/boringssl-with-bazel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/boringssl-with-bazel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/boringssl-with-bazel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/boringssl-with-bazel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/third_party/boringssl-with-bazel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/third_party/boringssl-with-bazel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\aes\aes.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_bitstr.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_bool.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_d2i_fp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_dup.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_gentm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_i2d_fp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_int.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_mbstr.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_object.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_octet.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_strex.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_strnid.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_time.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_type.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\a_utctm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\asn1_lib.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\asn1_par.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\asn_pack.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\f_int.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\f_string.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\posix_time.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_dec.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_enc.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_fre.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_new.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_typ.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\asn1\tasn_utl.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\base64\base64.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\bio.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\bio_mem.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\connect.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\errno.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\fd.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\file.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\hexdump.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\pair.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\printf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\socket.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bio\socket_helper.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\blake2\blake2.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bn\bn_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bn\convert.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bn\div.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bn\exponentiation.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bn\sqrt.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\buf\buf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bytestring\asn1_compat.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bytestring\ber.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bytestring\cbb.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bytestring\cbs.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\bytestring\unicode.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\chacha\chacha.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\derive_key.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_aesctrhmac.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_aeseax.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_aesgcmsiv.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_chacha20poly1305.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_des.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_null.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_rc2.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_rc4.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\e_tls.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\get_cipher.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cipher\tls_cbc.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cms\cms.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\conf\conf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_apple.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_fuchsia.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_linux.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_openbsd.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_sysreg.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_aarch64_win.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_arm_freebsd.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_arm_linux.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\cpu_intel.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\crypto.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\curve25519\curve25519.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\curve25519\curve25519_64_adx.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\curve25519\spake25519.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\des\des.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\dh\dh_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\dh\params.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\digest\digest_extra.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\dsa\dsa.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\dsa\dsa_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ec\ec_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ec\ec_derive.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ec\hash_to_curve.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ecdh\ecdh.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ecdsa\ecdsa_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\engine\engine.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\err\err.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\evp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\evp_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\evp_ctx.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_dh.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_dh_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_dsa_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_ec.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_ec_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_ed25519.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_ed25519_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_hkdf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_rsa.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_rsa_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_x25519.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\p_x25519_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\pbkdf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\print.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\scrypt.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\evp\sign.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\ex_data.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\fipsmodule\bcm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\fipsmodule\fips_shared_support.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\fuzzer_mode.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\hpke\hpke.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\hrss\hrss.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\kyber\kyber.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\lhash\lhash.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\md4\md4.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\md5\md5.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\mem.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\mldsa\mldsa.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\mlkem\mlkem.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\obj\obj.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\obj\obj_xref.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_all.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_info.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_lib.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_oth.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_pk8.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_pkey.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pem\pem_xaux.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pkcs7\pkcs7.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pkcs7\pkcs7_x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pkcs8\p5_pbev2.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pkcs8\pkcs8.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pkcs8\pkcs8_x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\poly1305\poly1305.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\poly1305\poly1305_arm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\poly1305\poly1305_vec.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\pool\pool.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\deterministic.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\fork_detect.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\forkunsafe.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\getentropy.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\ios.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\passive.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\rand.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\trusty.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\urandom.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rand\windows.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rc4\rc4.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\refcount.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rsa\rsa_asn1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rsa\rsa_crypt.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rsa\rsa_extra.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\rsa\rsa_print.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\sha\sha1.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\sha\sha256.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\sha\sha512.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\siphash\siphash.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\slhdsa\slhdsa.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\spake2plus\spake2plus.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\stack\stack.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\thread.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\thread_none.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\thread_pthread.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\thread_win.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\trust_token\pmbtoken.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\trust_token\trust_token.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\trust_token\voprf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\a_digest.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\a_sign.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\a_verify.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\algorithm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\asn1_gen.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\by_dir.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\by_file.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\i2d_pr.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\name_print.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\policy.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\rsa_pss.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\t_crl.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\t_req.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\t_x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\t_x509a.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_akey.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_akeya.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_alt.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_bcons.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_bitst.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_conf.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_cpols.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_crld.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_enum.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_extku.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_genn.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_ia5.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_info.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_int.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_lib.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_ncons.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_ocsp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_pcons.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_pmaps.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_prn.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_purp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_skey.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\v3_utl.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_att.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_cmp.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_d2.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_def.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_ext.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_lu.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_obj.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_req.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_set.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_trs.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_txt.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_v3.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_vfy.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509_vpm.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509cset.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509name.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509rset.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x509spki.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_algor.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_all.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_attrib.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_crl.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_exten.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_name.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_pubkey.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_req.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_sig.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_spki.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_val.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_x509.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\crypto\x509\x_x509a.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\gen\crypto\err_data.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\ZERO_CHECK.vcxproj">
+      <Project>{9F31133B-3FFC-3DFA-9AD3-012CCB3C71D9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

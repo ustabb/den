@@ -1,0 +1,297 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"third_party/abseil-cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "log_initialize::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_flags::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "vlog_config_internal::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_sink::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "die_if_null::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_globals::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_structured_proto::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_fnmatch::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "int128::@06b5455b9184ae5d7da9"
+		},
+		{
+			"id" : "exponential_biased::@e0994a476cd5089078f6"
+		},
+		{
+			"id" : "periodic_sampler::@e0994a476cd5089078f6"
+		},
+		{
+			"id" : "raw_hash_set::@38499774f344127f368e"
+		},
+		{
+			"id" : "hashtablez_sampler::@38499774f344127f368e"
+		},
+		{
+			"id" : "flags_usage::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_config::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_private_handle_accessor::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_program_name::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_usage_internal::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_marshalling::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_reflection::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_commandlineflag_internal::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_internal::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_commandlineflag::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "flags_parse::@0f9429ccca4b20103873"
+		},
+		{
+			"id" : "crc32c::@530013c76c600ad7235e"
+		},
+		{
+			"id" : "leak_check::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "examine_stack::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "decode_rust_punycode::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "debugging_internal::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "crc_cpu_detect::@530013c76c600ad7235e"
+		},
+		{
+			"id" : "stacktrace::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "demangle_internal::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "demangle_rust::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "failure_signal_handler::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "utf8_for_code_point::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "crc_cord_state::@530013c76c600ad7235e"
+		},
+		{
+			"id" : "symbolize::@bef747cff411f4c8de33"
+		},
+		{
+			"id" : "crc_internal::@530013c76c600ad7235e"
+		},
+		{
+			"id" : "low_level_hash::@2873fee6cf8b259b21a9"
+		},
+		{
+			"id" : "log_internal_message::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "hash::@2873fee6cf8b259b21a9"
+		},
+		{
+			"id" : "log_internal_conditions::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "city::@2873fee6cf8b259b21a9"
+		},
+		{
+			"id" : "log_internal_globals::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_proto::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_nullguard::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_log_sink_set::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_check_op::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "log_internal_format::@3c2dfe30bab0594cbaea"
+		},
+		{
+			"id" : "poison::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "tracing_internal::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "civil_time::@c7f8f80c481f24109e5b"
+		},
+		{
+			"id" : "graphcycles_internal::@25f86192366fc0506d0b"
+		},
+		{
+			"id" : "cord::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "kernel_timeout_internal::@25f86192366fc0506d0b"
+		},
+		{
+			"id" : "cordz_sample_token::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "time::@c7f8f80c481f24109e5b"
+		},
+		{
+			"id" : "cordz_info::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "cordz_handle::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "synchronization::@25f86192366fc0506d0b"
+		},
+		{
+			"id" : "time_zone::@c7f8f80c481f24109e5b"
+		},
+		{
+			"id" : "random_internal_seed_material::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_distribution_test_util::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_platform::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_randen_slow::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_randen_hwaes::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_randen_hwaes_impl::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_seed_sequences::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_seed_gen_exception::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_distributions::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_entropy_pool::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "random_internal_randen::@67db0dd3717e695151c1"
+		},
+		{
+			"id" : "strings::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "cord_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "cordz_functions::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "statusor::@e36cf3e4c700511c9d77"
+		},
+		{
+			"id" : "status::@e36cf3e4c700511c9d77"
+		},
+		{
+			"id" : "string_view::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "strings_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "str_format_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"id" : "strerror::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "log_severity::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "throw_delegate::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "scoped_set_env::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "raw_logging_internal::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "malloc_internal::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "base::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "spinlock_wait::@d3500256dd0e5dba6128"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@952008261500fdfa2358",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "third_party/abseil-cpp",
+		"source" : "third_party/abseil-cpp"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

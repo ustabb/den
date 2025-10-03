@@ -1,0 +1,45 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"third_party/cares/cares/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "c-ares::@ed7038c3f1d563910801"
+		},
+		{
+			"id" : "ahost::@21b8e59c0c7d05059ed1"
+		},
+		{
+			"id" : "adig::@21b8e59c0c7d05059ed1"
+		},
+		{
+			"id" : "acountry::@21b8e59c0c7d05059ed1"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@e3b85b6c5d371941ad42",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "third_party/cares/cares",
+		"source" : "third_party/cares/cares"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

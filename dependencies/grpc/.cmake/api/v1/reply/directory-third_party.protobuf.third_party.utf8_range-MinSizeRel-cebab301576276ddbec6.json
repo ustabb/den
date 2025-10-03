@@ -1,0 +1,134 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/protobuf/third_party/utf8_range/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/utf8_range",
+			"exportName" : "utf8_range-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "utf8_validity::@88f9a5fe84835489680e",
+					"index" : 175
+				},
+				{
+					"id" : "utf8_range::@88f9a5fe84835489680e",
+					"index" : 173
+				}
+			],
+			"paths" : 
+			[
+				"third_party/protobuf/third_party/utf8_range/CMakeFiles/Export/6a8aaa924eb72d7c7b2716871eaf3a83/utf8_range-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/protobuf/third_party/utf8_range/MinSizeRel/libutf8_validity.lib"
+			],
+			"targetId" : "utf8_validity::@88f9a5fe84835489680e",
+			"targetIndex" : 175,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/protobuf/third_party/utf8_range/MinSizeRel/libutf8_range.lib"
+			],
+			"targetId" : "utf8_range::@88f9a5fe84835489680e",
+			"targetIndex" : 173,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/utf8_range",
+			"paths" : 
+			[
+				"build/third_party/protobuf/third_party/utf8_range/utf8_range-config.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/third_party/protobuf/third_party/utf8_range/utf8_range.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/protobuf/third_party/utf8_range/utf8_range.h",
+				"third_party/protobuf/third_party/utf8_range/utf8_validity.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/protobuf/third_party/utf8_range",
+		"source" : "third_party/protobuf/third_party/utf8_range"
+	}
+}

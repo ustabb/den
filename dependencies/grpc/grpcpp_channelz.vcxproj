@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6669429-F9D6-368E-81ED-DB913A2EC1BD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>grpcpp_channelz</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">grpcpp_channelz.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">grpcpp_channelz</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">grpcpp_channelz.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">grpcpp_channelz</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">grpcpp_channelz.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">grpcpp_channelz</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">grpcpp_channelz.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">grpcpp_channelz</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Usta\Desktop\grpc\build\Debug\grpcpp_channelz.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\Usta\Desktop\grpc\build\Release\grpcpp_channelz.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\Usta\Desktop\grpc\build\MinSizeRel\grpcpp_channelz.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4789</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Usta\Desktop\grpc\build\RelWithDebInfo\grpcpp_channelz.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usta\Desktop\grpc\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\zlib;C:\Users\Usta\Desktop\grpc\include;C:\Users\Usta\Desktop\grpc;C:\Users\Usta\Desktop\grpc\third_party\address_sorting\include;C:\Users\Usta\Desktop\grpc\build\third_party\re2;C:\Users\Usta\Desktop\grpc\third_party\boringssl-with-bazel\src\include;C:\Users\Usta\Desktop\grpc\src\core\ext\upb-gen;C:\Users\Usta\Desktop\grpc\src\core\ext\upbdefs-gen;C:\Users\Usta\Desktop\grpc\third_party\upb;C:\Users\Usta\Desktop\grpc\third_party\utf8_range;C:\Users\Usta\Desktop\grpc\third_party\xxhash;C:\Users\Usta\Desktop\grpc\build\third_party\zlib;C:\Users\Usta\Desktop\grpc\build\gens;C:\Users\Usta\Desktop\grpc\third_party\abseil-cpp;C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares;C:\Users\Usta\Desktop\grpc\third_party\cares\cares\include;C:\Users\Usta\Desktop\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\build\CMakeFiles\b32f2df274572e73c6086ce68b49c07a\channelz.grpc.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Debug/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Debug\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Release/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Release\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/MinSizeRel/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe;C:\Users\Usta\Desktop\grpc\build\MinSizeRel\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/RelWithDebInfo/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe;C:\Users\Usta\Desktop\grpc\build\RelWithDebInfo\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\build\CMakeFiles\1b5dbbd62d22c59225fcedf712b85abc\channelz.grpc.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Debug/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Debug\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Release/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Release\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/MinSizeRel/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe;C:\Users\Usta\Desktop\grpc\build\MinSizeRel\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/channelz.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/RelWithDebInfo/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/channelz.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\channelz.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe;C:\Users\Usta\Desktop\grpc\build\RelWithDebInfo\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\build\CMakeFiles\1b5dbbd62d22c59225fcedf712b85abc\service.grpc.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/service.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Debug/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/service.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Debug\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Debug\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/service.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/Release/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/service.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\Release\protoc.exe;C:\Users\Usta\Desktop\grpc\build\Release\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/service.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/MinSizeRel/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/service.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\MinSizeRel\protoc.exe;C:\Users\Usta\Desktop\grpc\build\MinSizeRel\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Running gRPC C++ protocol buffer compiler for src/proto/grpc/channelz/v2/service.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\Usta\Desktop\grpc\build\protos
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe --grpc_out=generate_mock_code=true:C:/Users/Usta/Desktop/grpc/build/gens --cpp_out=C:/Users/Usta/Desktop/grpc/build/gens --plugin=protoc-gen-grpc=C:/Users/Usta/Desktop/grpc/build/RelWithDebInfo/grpc_cpp_plugin.exe -I . -I C:/Users/Usta/Desktop/grpc/third_party/protobuf/src src/proto/grpc/channelz/v2/service.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\protos\src\proto\grpc\channelz\v2\service.proto;C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\RelWithDebInfo\protoc.exe;C:\Users\Usta\Desktop\grpc\build\RelWithDebInfo\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service_mock.grpc.pb.h;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.cc;C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLanguage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\Usta\Desktop\grpc\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\cmake\address_sorting.cmake;C:\Users\Usta\Desktop\grpc\cmake\benchmark.cmake;C:\Users\Usta\Desktop\grpc\cmake\cares.cmake;C:\Users\Usta\Desktop\grpc\cmake\ccache.cmake;C:\Users\Usta\Desktop\grpc\cmake\download_archive.cmake;C:\Users\Usta\Desktop\grpc\cmake\gRPCConfig.cmake.in;C:\Users\Usta\Desktop\grpc\cmake\msvc_static_runtime.cmake;C:\Users\Usta\Desktop\grpc\cmake\pkg-config-template.pc.in;C:\Users\Usta\Desktop\grpc\cmake\protobuf.cmake;C:\Users\Usta\Desktop\grpc\cmake\re2.cmake;C:\Users\Usta\Desktop\grpc\cmake\ssl.cmake;C:\Users\Usta\Desktop\grpc\cmake\upb.cmake;C:\Users\Usta\Desktop\grpc\cmake\xxhash.cmake;C:\Users\Usta\Desktop\grpc\cmake\zlib.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\Usta\Desktop\grpc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLanguage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\Usta\Desktop\grpc\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\cmake\address_sorting.cmake;C:\Users\Usta\Desktop\grpc\cmake\benchmark.cmake;C:\Users\Usta\Desktop\grpc\cmake\cares.cmake;C:\Users\Usta\Desktop\grpc\cmake\ccache.cmake;C:\Users\Usta\Desktop\grpc\cmake\download_archive.cmake;C:\Users\Usta\Desktop\grpc\cmake\gRPCConfig.cmake.in;C:\Users\Usta\Desktop\grpc\cmake\msvc_static_runtime.cmake;C:\Users\Usta\Desktop\grpc\cmake\pkg-config-template.pc.in;C:\Users\Usta\Desktop\grpc\cmake\protobuf.cmake;C:\Users\Usta\Desktop\grpc\cmake\re2.cmake;C:\Users\Usta\Desktop\grpc\cmake\ssl.cmake;C:\Users\Usta\Desktop\grpc\cmake\upb.cmake;C:\Users\Usta\Desktop\grpc\cmake\xxhash.cmake;C:\Users\Usta\Desktop\grpc\cmake\zlib.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\Usta\Desktop\grpc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLanguage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\Usta\Desktop\grpc\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\cmake\address_sorting.cmake;C:\Users\Usta\Desktop\grpc\cmake\benchmark.cmake;C:\Users\Usta\Desktop\grpc\cmake\cares.cmake;C:\Users\Usta\Desktop\grpc\cmake\ccache.cmake;C:\Users\Usta\Desktop\grpc\cmake\download_archive.cmake;C:\Users\Usta\Desktop\grpc\cmake\gRPCConfig.cmake.in;C:\Users\Usta\Desktop\grpc\cmake\msvc_static_runtime.cmake;C:\Users\Usta\Desktop\grpc\cmake\pkg-config-template.pc.in;C:\Users\Usta\Desktop\grpc\cmake\protobuf.cmake;C:\Users\Usta\Desktop\grpc\cmake\re2.cmake;C:\Users\Usta\Desktop\grpc\cmake\ssl.cmake;C:\Users\Usta\Desktop\grpc\cmake\upb.cmake;C:\Users\Usta\Desktop\grpc\cmake\xxhash.cmake;C:\Users\Usta\Desktop\grpc\cmake\zlib.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\Usta\Desktop\grpc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/Usta/Desktop/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Usta/Desktop/grpc -BC:/Users/Usta/Desktop/grpc/build --check-stamp-file C:/Users/Usta/Desktop/grpc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLanguage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\Usta\Desktop\grpc\build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\Usta\Desktop\grpc\cmake\abseil-cpp.cmake;C:\Users\Usta\Desktop\grpc\cmake\address_sorting.cmake;C:\Users\Usta\Desktop\grpc\cmake\benchmark.cmake;C:\Users\Usta\Desktop\grpc\cmake\cares.cmake;C:\Users\Usta\Desktop\grpc\cmake\ccache.cmake;C:\Users\Usta\Desktop\grpc\cmake\download_archive.cmake;C:\Users\Usta\Desktop\grpc\cmake\gRPCConfig.cmake.in;C:\Users\Usta\Desktop\grpc\cmake\msvc_static_runtime.cmake;C:\Users\Usta\Desktop\grpc\cmake\pkg-config-template.pc.in;C:\Users\Usta\Desktop\grpc\cmake\protobuf.cmake;C:\Users\Usta\Desktop\grpc\cmake\re2.cmake;C:\Users\Usta\Desktop\grpc\cmake\ssl.cmake;C:\Users\Usta\Desktop\grpc\cmake\upb.cmake;C:\Users\Usta\Desktop\grpc\cmake\xxhash.cmake;C:\Users\Usta\Desktop\grpc\cmake\zlib.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\Usta\Desktop\grpc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.cc">
+      <ObjectFileName>$(IntDir)/gens/src/proto/grpc/channelz/channelz.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.cc">
+      <ObjectFileName>$(IntDir)/gens/src/proto/grpc/channelz/channelz.grpc.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\channelz.grpc.pb.h" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.cc">
+      <ObjectFileName>$(IntDir)/gens/src/proto/grpc/channelz/v2/channelz.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.cc">
+      <ObjectFileName>$(IntDir)/gens/src/proto/grpc/channelz/v2/channelz.grpc.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\channelz.grpc.pb.h" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.cc" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.pb.h" />
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\build\gens\src\proto\grpc\channelz\v2\service.grpc.pb.h" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\src\cpp\server\channelz\channelz_service.cc" />
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\src\cpp\server\channelz\channelz_service_plugin.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\ZERO_CHECK.vcxproj">
+      <Project>{9F31133B-3FFC-3DFA-9AD3-012CCB3C71D9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\address_sorting.vcxproj">
+      <Project>{04A5B67C-8C0C-3124-AFB4-A353E0D4A65F}</Project>
+      <Name>address_sorting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\base.vcxproj">
+      <Project>{C308001B-85B9-3822-9AB3-490E4712F0F9}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\cares\cares\src\lib\c-ares.vcxproj">
+      <Project>{173E9969-C8D3-3996-8042-5AF4FF40475E}</Project>
+      <Name>c-ares</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\city.vcxproj">
+      <Project>{69CA41F0-0181-3352-BEE0-79BC3F71BE02}</Project>
+      <Name>city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\civil_time.vcxproj">
+      <Project>{28DC9888-9F99-3AFE-8B32-DADB032190B1}</Project>
+      <Name>civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cord.vcxproj">
+      <Project>{31826FA7-CC22-3775-9F73-5B5ACCC21358}</Project>
+      <Name>cord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cord_internal.vcxproj">
+      <Project>{15C1866B-7BCB-3749-A509-D017160C547B}</Project>
+      <Name>cord_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_functions.vcxproj">
+      <Project>{EDF989A5-9445-3FB1-82A0-803E9EA39FAC}</Project>
+      <Name>cordz_functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_handle.vcxproj">
+      <Project>{7E8BE581-7E69-38B4-9353-EEFA01D3EE7B}</Project>
+      <Name>cordz_handle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\cordz_info.vcxproj">
+      <Project>{767511D3-9869-3D30-90EE-A588DA3E8495}</Project>
+      <Name>cordz_info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc32c.vcxproj">
+      <Project>{11C4DB95-8551-37E6-B1D3-3FE4E6444193}</Project>
+      <Name>crc32c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_cord_state.vcxproj">
+      <Project>{9DCFC8D5-41E4-31E3-8884-48CFDA43D7E3}</Project>
+      <Name>crc_cord_state</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_cpu_detect.vcxproj">
+      <Project>{27C0B7DE-4405-39A0-AA44-E367B3C1E62B}</Project>
+      <Name>crc_cpu_detect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\crc\crc_internal.vcxproj">
+      <Project>{E1D7755B-7BDC-3210-89C3-8F6B037A7500}</Project>
+      <Name>crc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\crypto.vcxproj">
+      <Project>{37941B1E-BA20-3871-A0D5-9D0B1D8C5172}</Project>
+      <Name>crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\debugging_internal.vcxproj">
+      <Project>{480FF80A-C424-3CC1-9AEE-F306FD53F198}</Project>
+      <Name>debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\decode_rust_punycode.vcxproj">
+      <Project>{3F43C9B5-E09B-39A3-B57C-5737396DEF27}</Project>
+      <Name>decode_rust_punycode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\demangle_internal.vcxproj">
+      <Project>{A94FC1B2-4D44-3348-A0C2-5ED42FED61B0}</Project>
+      <Name>demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\demangle_rust.vcxproj">
+      <Project>{BAEB0FDC-DE07-36D1-AED7-A1A7620F7D3A}</Project>
+      <Name>demangle_rust</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\die_if_null.vcxproj">
+      <Project>{6BC067AB-58B5-3DF2-99C1-BD242B2D59C2}</Project>
+      <Name>die_if_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\examine_stack.vcxproj">
+      <Project>{6862CD13-658C-38BB-99AC-C886C80252AD}</Project>
+      <Name>examine_stack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\profiling\exponential_biased.vcxproj">
+      <Project>{13BF555F-930A-3FBA-872F-0FBD085FD4C0}</Project>
+      <Name>exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag.vcxproj">
+      <Project>{EACB4ECA-7B7F-342B-85C6-3BA8B5D7EEEA}</Project>
+      <Name>flags_commandlineflag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag_internal.vcxproj">
+      <Project>{5CA7B5D2-469C-3FBD-8761-BD1E04D63463}</Project>
+      <Name>flags_commandlineflag_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_config.vcxproj">
+      <Project>{25725620-3CFE-3ADD-93AA-0B9ADF44C85E}</Project>
+      <Name>flags_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_internal.vcxproj">
+      <Project>{FFE9BA42-D72A-3610-835F-A7132B73DCEF}</Project>
+      <Name>flags_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_marshalling.vcxproj">
+      <Project>{6984F061-445E-3CD8-989D-B56BCDA7D6C9}</Project>
+      <Name>flags_marshalling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_private_handle_accessor.vcxproj">
+      <Project>{EE0F5425-B433-3DC1-8F97-6A749B0CC925}</Project>
+      <Name>flags_private_handle_accessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_program_name.vcxproj">
+      <Project>{E5275BEC-0DED-3727-A32C-1DFE1040EAF8}</Project>
+      <Name>flags_program_name</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\flags\flags_reflection.vcxproj">
+      <Project>{1DCEA334-46CA-31C9-834E-25935C9824CE}</Project>
+      <Name>flags_reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\gpr.vcxproj">
+      <Project>{58DD4E0C-C08F-34FE-9D65-25E8810D7703}</Project>
+      <Name>gpr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\graphcycles_internal.vcxproj">
+      <Project>{2076BD96-E325-37CD-95B9-A904F877FC86}</Project>
+      <Name>graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\grpc.vcxproj">
+      <Project>{55BFE3B7-1357-3FA4-A2EE-1E5576E1EC81}</Project>
+      <Name>grpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\grpc++.vcxproj">
+      <Project>{1CFC0EA3-5EC7-38CF-BB0E-07B0BFE304B4}</Project>
+      <Name>grpc++</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\grpc_cpp_plugin.vcxproj">
+      <Project>{A2FDECE1-4829-3873-B0BB-BA58438D1B7B}</Project>
+      <Name>grpc_cpp_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\hash.vcxproj">
+      <Project>{3174645C-6353-3458-A20A-6F1B899ACBF7}</Project>
+      <Name>hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\container\hashtablez_sampler.vcxproj">
+      <Project>{8032E165-65B2-39A1-A460-9A4286889192}</Project>
+      <Name>hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\numeric\int128.vcxproj">
+      <Project>{33CC478A-FE5E-34A8-9BF7-C8CB617B44CF}</Project>
+      <Name>int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\kernel_timeout_internal.vcxproj">
+      <Project>{2E25299A-8B11-3598-B2B3-35A0EDFEE46E}</Project>
+      <Name>kernel_timeout_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\leak_check.vcxproj">
+      <Project>{38233039-E33C-3CB7-B6C2-DD336820DFF7}</Project>
+      <Name>leak_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\libprotobuf.vcxproj">
+      <Project>{A2782E96-EEB2-3154-9B31-C6ACBED457EC}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_globals.vcxproj">
+      <Project>{5CCCE874-A458-3635-8BAF-E436F0DE8E7B}</Project>
+      <Name>log_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_initialize.vcxproj">
+      <Project>{DBEE4ED8-9C24-3C7E-9705-1D4263162A5E}</Project>
+      <Name>log_initialize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_check_op.vcxproj">
+      <Project>{F7640180-9F02-33FA-94AA-2C215F52445E}</Project>
+      <Name>log_internal_check_op</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_conditions.vcxproj">
+      <Project>{5EA9D362-8645-364D-AE53-7F2A0B491B5D}</Project>
+      <Name>log_internal_conditions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_fnmatch.vcxproj">
+      <Project>{FC462211-C784-300E-9560-EF6301C4CC76}</Project>
+      <Name>log_internal_fnmatch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_format.vcxproj">
+      <Project>{144AB2CA-69EB-31F4-BCB2-A06C157A0B39}</Project>
+      <Name>log_internal_format</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_globals.vcxproj">
+      <Project>{65DA2C0E-BC39-3236-BA55-327D83D38411}</Project>
+      <Name>log_internal_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_log_sink_set.vcxproj">
+      <Project>{CA88502A-56F8-38BA-8708-6A09FD60D21B}</Project>
+      <Name>log_internal_log_sink_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_message.vcxproj">
+      <Project>{D49F2B90-A88F-3BC3-8E54-AE243C1E68A3}</Project>
+      <Name>log_internal_message</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_nullguard.vcxproj">
+      <Project>{9DD86E18-BD9A-3A5B-88C0-7FC2B71DCA6F}</Project>
+      <Name>log_internal_nullguard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_proto.vcxproj">
+      <Project>{055120C5-D88C-33D7-B23B-368BF5B73A14}</Project>
+      <Name>log_internal_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_internal_structured_proto.vcxproj">
+      <Project>{5C81A960-4575-33F1-A235-C7A3771A81BC}</Project>
+      <Name>log_internal_structured_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\log_severity.vcxproj">
+      <Project>{CE027A99-5364-3217-B691-BABF7B9F2608}</Project>
+      <Name>log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\log_sink.vcxproj">
+      <Project>{CD6EC654-BEB0-3122-8F09-41EE57912F1F}</Project>
+      <Name>log_sink</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\hash\low_level_hash.vcxproj">
+      <Project>{87F5F25E-F4B6-32B8-8B29-470F6FF88A1A}</Project>
+      <Name>low_level_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\malloc_internal.vcxproj">
+      <Project>{FED274E7-76A3-3E3B-B407-7E3E6D23E7F9}</Project>
+      <Name>malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\protoc.vcxproj">
+      <Project>{7D998639-083C-3019-BEC5-052F2CF6D657}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_distributions.vcxproj">
+      <Project>{C1DBFAB0-9922-3100-A4B7-A6AC216E7909}</Project>
+      <Name>random_distributions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_entropy_pool.vcxproj">
+      <Project>{EBDEEC78-6AA1-3911-AC47-3F5A6B1F5722}</Project>
+      <Name>random_internal_entropy_pool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_platform.vcxproj">
+      <Project>{13EF307D-1898-3C22-9337-E7BA71BCA697}</Project>
+      <Name>random_internal_platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen.vcxproj">
+      <Project>{112047E4-BD07-3A95-AA85-F1EC0BC5D5E1}</Project>
+      <Name>random_internal_randen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes.vcxproj">
+      <Project>{F9965425-F8A7-3DDB-8F83-B9397E78C65C}</Project>
+      <Name>random_internal_randen_hwaes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes_impl.vcxproj">
+      <Project>{8B703419-325B-35D9-A204-0A503481B618}</Project>
+      <Name>random_internal_randen_hwaes_impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_randen_slow.vcxproj">
+      <Project>{8BCA3DB7-2FCB-3106-9C5A-0D3F3062C4F0}</Project>
+      <Name>random_internal_randen_slow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_internal_seed_material.vcxproj">
+      <Project>{C6DF2C6D-868D-30FC-9504-21471DEF76AA}</Project>
+      <Name>random_internal_seed_material</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_seed_gen_exception.vcxproj">
+      <Project>{745B0BB4-1AAD-34B2-924F-57CDEA57A229}</Project>
+      <Name>random_seed_gen_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\random\random_seed_sequences.vcxproj">
+      <Project>{2E2B5A9B-7EC3-3960-A5E3-55D0D9284AD9}</Project>
+      <Name>random_seed_sequences</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\container\raw_hash_set.vcxproj">
+      <Project>{3FBE37E2-A2D7-38CF-9E58-694A20B89B38}</Project>
+      <Name>raw_hash_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\raw_logging_internal.vcxproj">
+      <Project>{AE5F0E01-D751-37F3-BE42-9D41D2C585E7}</Project>
+      <Name>raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\re2\re2.vcxproj">
+      <Project>{AD0813D1-80EE-3586-8294-54C44E75EFC3}</Project>
+      <Name>re2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\spinlock_wait.vcxproj">
+      <Project>{064788AD-25B6-3ECC-BB2B-6A0E0168BDC8}</Project>
+      <Name>spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\boringssl-with-bazel\ssl.vcxproj">
+      <Project>{C169C9E2-4DC9-3D50-8476-79BDC7971FFF}</Project>
+      <Name>ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\stacktrace.vcxproj">
+      <Project>{41CDF4B2-E1B3-37CF-BDEA-CA649EDC3459}</Project>
+      <Name>stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\status\status.vcxproj">
+      <Project>{51E4DE28-81C6-3AFB-97D4-7D09212A4457}</Project>
+      <Name>status</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\status\statusor.vcxproj">
+      <Project>{65BF0FBA-9B21-3CC8-A0D2-1A2979CF698A}</Project>
+      <Name>statusor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\str_format_internal.vcxproj">
+      <Project>{96DA3100-9F90-385C-B977-EB3F5DC056A3}</Project>
+      <Name>str_format_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\strerror.vcxproj">
+      <Project>{44F87946-1600-3906-B296-DD318BA76086}</Project>
+      <Name>strerror</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\string_view.vcxproj">
+      <Project>{C1D9B4E6-BE79-3311-955A-125DC67525B7}</Project>
+      <Name>string_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\strings.vcxproj">
+      <Project>{71755CDE-862E-3ECD-B2E4-F91A8BF80B88}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\strings\strings_internal.vcxproj">
+      <Project>{9D7A7C1E-1C40-3788-AC56-043222EEC575}</Project>
+      <Name>strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\symbolize.vcxproj">
+      <Project>{BA210C18-62A1-3AA4-B4AD-B42455A3438E}</Project>
+      <Name>symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\synchronization\synchronization.vcxproj">
+      <Project>{1970E00B-7734-3B13-AA8D-DE48BC2E64B9}</Project>
+      <Name>synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\throw_delegate.vcxproj">
+      <Project>{19E5B018-451D-303E-9C7B-3CB680B37A06}</Project>
+      <Name>throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\time.vcxproj">
+      <Project>{0C99697C-8731-33AC-A655-F8F1BB55B686}</Project>
+      <Name>time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\time\time_zone.vcxproj">
+      <Project>{1A5DE2E4-13A0-3DE9-8BA6-E7AEF4015C90}</Project>
+      <Name>time_zone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\base\tracing_internal.vcxproj">
+      <Project>{CDDE788A-0781-3715-AB4B-D8E791507F51}</Project>
+      <Name>tracing_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_base_lib.vcxproj">
+      <Project>{D3BE3FCE-0225-36FA-9881-8E60D5706699}</Project>
+      <Name>upb_base_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_hash_lib.vcxproj">
+      <Project>{574E1863-46BB-3AA5-80E3-94D2DE98BB10}</Project>
+      <Name>upb_hash_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_json_lib.vcxproj">
+      <Project>{DFB14ED7-D859-374A-B6B2-7E7E792C1079}</Project>
+      <Name>upb_json_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_lex_lib.vcxproj">
+      <Project>{B3D07112-CFFA-3294-9BCB-703BB7ABA649}</Project>
+      <Name>upb_lex_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_mem_lib.vcxproj">
+      <Project>{ED1935D4-23C3-3887-AA1A-9C0EA9DCEB22}</Project>
+      <Name>upb_mem_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_message_lib.vcxproj">
+      <Project>{230B9C4D-F8E5-3D97-815B-5E988DD9DAEB}</Project>
+      <Name>upb_message_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_mini_descriptor_lib.vcxproj">
+      <Project>{CF74072F-5857-3C41-9729-D3353E01CEF1}</Project>
+      <Name>upb_mini_descriptor_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_mini_table_lib.vcxproj">
+      <Project>{4EA3B4FB-5E3E-33F3-A1AB-EA6BFCDAED8C}</Project>
+      <Name>upb_mini_table_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_reflection_lib.vcxproj">
+      <Project>{A6BC22CA-6494-364B-B4BD-38D74A605278}</Project>
+      <Name>upb_reflection_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_textformat_lib.vcxproj">
+      <Project>{FE4B3E76-D15D-309A-B64B-8BBC45AF511D}</Project>
+      <Name>upb_textformat_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\upb_wire_lib.vcxproj">
+      <Project>{9644EE5A-3FF2-3D22-B3F0-0A8A74353A09}</Project>
+      <Name>upb_wire_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\debugging\utf8_for_code_point.vcxproj">
+      <Project>{9F4E4D84-3462-3AAA-B3F5-1914A483798B}</Project>
+      <Name>utf8_for_code_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\utf8_range_lib.vcxproj">
+      <Project>{F8AFB0ED-204B-3F07-A147-DDCB783277CC}</Project>
+      <Name>utf8_range_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\third_party\utf8_range\utf8_validity.vcxproj">
+      <Project>{982E1383-5109-35E6-BA2A-99848418CC20}</Project>
+      <Name>utf8_validity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\abseil-cpp\absl\log\vlog_config_internal.vcxproj">
+      <Project>{B71AB11C-1FB4-3D9C-B212-163D6B346D7E}</Project>
+      <Name>vlog_config_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usta\Desktop\grpc\build\third_party\zlib\zlibstatic.vcxproj">
+      <Project>{764D38E9-D9B2-3ECB-8F26-B215EC130B2B}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

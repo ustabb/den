@@ -8,6 +8,7 @@
 #include "media/decoder.hpp"
 #include "media/codecs.hpp"
 #include "network/udp_server.hpp"
+#include "network/tcp_server.hpp"
 
 using namespace std;
 
@@ -61,5 +62,16 @@ int main() {
     }
 
     cout << "Stream Engine Stopping..." << endl;
+
+    boost::asio::io_context io;
+auto server = std::make_shared<network::TcpServer>(io, 1935 /*port*/, 16 /*peek bytes*/);
+server->run();
+std::thread t([&](){ io.run(); });
+
+server->stop();
+io.stop();
+t.join();
+
+
     return 0;
 }

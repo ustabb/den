@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package streamengine.control;
+
+// Genel hata kodları
+enum ErrorCode {
+  OK = 0;
+  INVALID_REQUEST = 1;
+  UNAUTHORIZED = 2;
+  INTERNAL_ERROR = 3;
+}
+
+// Stream başlatma isteği
+message StartStreamRequest {
+  string channel_id = 1;
+  string codec = 2;
+  int32 bitrate = 3;
+}
+
+// Stream başlatma yanıtı
+message StartStreamResponse {
+  ErrorCode status = 1;
+  string message = 2;
+}
+
+// Stream durdurma isteği
+message StopStreamRequest {
+  string channel_id = 1;
+}
+
+// Stream durdurma yanıtı
+message StopStreamResponse {
+  ErrorCode status = 1;
+  string message = 2;
+}
+
+// Stream durum bilgisi
+message StreamStatusRequest {
+  string channel_id = 1;
+}
+
+message StreamStatusResponse {
+  string channel_id = 1;
+  bool running = 2;
+  int32 uptime_seconds = 3;
+  int32 current_bitrate = 4;
+}
+
+// Cluster yönetimi
+message ClusterJoinRequest {
+  string node_id = 1;
+  string ip = 2;
+  int32 port = 3;
+}
+
+message ClusterJoinResponse {
+  ErrorCode status = 1;
+  string message = 2;
+}
+
+message ClusterStatusRequest {}
+
+message ClusterStatusResponse {
+  repeated string nodes = 1;
+}
+
+// Servis tanımı
+service ControlService {
+  rpc StartStream (StartStreamRequest) returns (StartStreamResponse);
+  rpc StopStream (StopStreamRequest) returns (StopStreamResponse);
+  rpc GetStreamStatus (StreamStatusRequest) returns (StreamStatusResponse);
+  rpc ClusterJoin (ClusterJoinRequest) returns (ClusterJoinResponse);
+  rpc GetClusterStatus (ClusterStatusRequest) returns (ClusterStatusResponse);
+}

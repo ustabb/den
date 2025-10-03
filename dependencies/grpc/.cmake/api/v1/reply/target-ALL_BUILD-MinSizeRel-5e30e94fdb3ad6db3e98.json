@@ -1,0 +1,102 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"third_party/re2/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "charclass_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "re2::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "possible_match_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "compile_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "filtered_re2_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "testing::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "mimics_pcre_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "parse_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "required_prefix_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "string_generator_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "exhaustive1_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "dfa_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "exhaustive2_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "re2_arg_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "regexp_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "set_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "simplify_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "re2_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "exhaustive_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "search_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "exhaustive3_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "random_test::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "regexp_benchmark::@ec8e6a51bca98d0d3736"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@ec8e6a51bca98d0d3736",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "third_party/re2",
+		"source" : "third_party/re2"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 // ProtocolRouter: Routes frames to correct protocol handler (RTMP/HLS/WebRTC)
 namespace streaming {
 class ProtocolRouter {

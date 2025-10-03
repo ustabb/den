@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\status.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\hash\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\json\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\json\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\atoi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\round_trip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\strtod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\unicode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\arena.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\accessors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\compat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\compare_unknown.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\extension.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\iterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\map_sorter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\merge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\build_enum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\base92.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\link.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\extension_registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def_pool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def_type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\desc_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_reserved_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_value_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\extension_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\field_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\file_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\def_builder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\strdup2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message_reserved_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\method_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\oneof_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\service_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\debug_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\internal\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\util\def_to_proto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\util\required_fields.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\byte_size.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\eps_copy_input_stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\internal\decode_fast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\reader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake\google\protobuf\descriptor.upb_minitable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\descriptor_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\internal\endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\internal\log2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\status.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\string_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\base\upcast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\generated_code_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\hash\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\hash\int_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\hash\str_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\json\decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\json\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\atoi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\round_trip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\lex\unicode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\arena.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mem\internal\arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\accessors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\compare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\copy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\accessors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\compare_unknown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\map_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\map_sorter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\tagged_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\internal\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\map_gencode_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\merge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\tagged_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\message\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\build_enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\base92.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\encode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\modifiers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\internal\wire_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_descriptor\link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\extension_registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\size_log2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\internal\sub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\mini_table\sub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\port\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\port\vsnprintf_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\def_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\descriptor_bootstrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_reserved_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\enum_value_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\extension_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\field_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\file_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\def_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\desc_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\enum_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\enum_reserved_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\enum_value_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\extension_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\field_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\file_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\message_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\message_reserved_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\method_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\oneof_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\service_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\internal\upb_edition_defaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\message_reserved_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\method_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\oneof_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\service_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\debug_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\internal\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\text\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\util\def_to_proto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\util\required_fields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\byte_size.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\eps_copy_input_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\internal\decode_fast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\wire\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake\google\protobuf\descriptor.upb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\reflection\cmake\google\protobuf\descriptor.upb_minitable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\port\def.inc" />
+    <None Include="C:\Users\Usta\Desktop\grpc\third_party\protobuf\upb\port\undef.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Usta\Desktop\grpc\build\third_party\protobuf\version.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{63A4D3AD-1AE1-3488-95FA-71D95C6A32C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9EA8C4E9-3028-34A9-8363-E2B52F4758C2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

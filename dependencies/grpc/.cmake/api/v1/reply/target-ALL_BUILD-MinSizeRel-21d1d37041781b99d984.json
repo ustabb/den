@@ -1,0 +1,60 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"third_party/protobuf/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "libprotobuf::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "libupb::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "libprotobuf-lite::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "libprotoc::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "protoc-gen-upbdefs::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "protoc::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "utf8_validity::@88f9a5fe84835489680e"
+		},
+		{
+			"id" : "protoc-gen-upb::@b4983b294d7e4fa7aa07"
+		},
+		{
+			"id" : "utf8_range::@88f9a5fe84835489680e"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@b4983b294d7e4fa7aa07",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "third_party/protobuf",
+		"source" : "third_party/protobuf"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
